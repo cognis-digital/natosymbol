@@ -2,3 +2,4 @@
 2024-06-30T09:19:29  ci(ci): add a regression fixture
 2024-07-08T16:36:36  build(mcp): wire the MCP tool schema
 2024-08-04T11:53:43  refactor(parser): add --fail-on threshold handling
+2024-08-30T18:10:50  perf(io): add color + severity icons
