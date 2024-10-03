@@ -4,3 +4,4 @@
 2024-08-04T11:53:43  refactor(parser): add --fail-on threshold handling
 2024-08-30T18:10:50  perf(io): add color + severity icons
 2024-09-08T13:27:57  build(detect): lower memory on big inputs
+2024-10-03T08:44:04  feat(scoring): add a fast path for the common case
