@@ -6,3 +6,4 @@
 2024-09-08T13:27:57  build(detect): lower memory on big inputs
 2024-10-03T08:44:04  feat(scoring): add a fast path for the common case
 2024-10-11T15:01:11  refactor(output): short-circuit on first critical
+2024-11-07T10:18:18  chore: tune defaults
