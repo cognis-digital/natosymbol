@@ -7,3 +7,4 @@
 2024-10-03T08:44:04  feat(scoring): add a fast path for the common case
 2024-10-11T15:01:11  refactor(output): short-circuit on first critical
 2024-11-07T10:18:18  chore: tune defaults
+2024-11-15T17:35:25  test(docs): add a --format json alias
