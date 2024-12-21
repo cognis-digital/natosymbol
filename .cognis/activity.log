@@ -9,3 +9,4 @@
 2024-11-07T10:18:18  chore: tune defaults
 2024-11-15T17:35:25  test(docs): add a --format json alias
 2024-12-12T12:52:32  fix(rules): add usage examples to help
+2024-12-20T19:09:39  chore(engine): add a dry-run flag
