@@ -12,3 +12,4 @@
 2024-12-20T19:09:39  chore(engine): add a dry-run flag
 2025-01-14T14:26:46  test(scan): add a JSON schema for output
 2025-02-10T09:43:53  style(scoring): tune severity weights
+2025-02-18T16:00:00  fix(output): handle empty and malformed input
