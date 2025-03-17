@@ -13,3 +13,4 @@
 2025-01-14T14:26:46  test(scan): add a JSON schema for output
 2025-02-10T09:43:53  style(scoring): tune severity weights
 2025-02-18T16:00:00  fix(output): handle empty and malformed input
+2025-03-17T11:17:07  chore(tests): support stdin as a source
