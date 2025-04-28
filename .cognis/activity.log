@@ -16,3 +16,4 @@
 2025-03-17T11:17:07  chore(tests): support stdin as a source
 2025-03-25T18:34:14  test: it's not flaky, you're flaky
 2025-04-20T13:51:21  fix: works on my machine (TM)
+2025-04-28T08:08:28  ci(engine): stream large files without buffering
