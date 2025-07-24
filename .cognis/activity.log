@@ -20,3 +20,4 @@
 2025-05-24T15:25:35  docs(scan): memoize repeated lookups
 2025-06-20T10:42:42  refactor(format): add type hints to the public API
 2025-06-28T17:59:49  ci(report): add a --quiet mode
+2025-07-24T12:16:56  build(config): document the config keys
