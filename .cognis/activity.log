@@ -22,3 +22,4 @@
 2025-06-28T17:59:49  ci(report): add a --quiet mode
 2025-07-24T12:16:56  build(config): document the config keys
 2025-08-01T19:33:03  feat(deps): short-circuit on first critical
+2025-08-27T14:50:10  refactor(cli): skip binary files by sniffing
