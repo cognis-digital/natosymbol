@@ -1,0 +1,10 @@
+# Sample SIDC feed — one code per line. Lines starting with # are ignored.
+# Valid entries
+SFGPUCI-----USG
+SHGPUCR-----RUG
+SFAPMFF-----USA
+SNSPCLDD-----GBN
+# Invalid: unknown affiliation 'Q'
+SQGPUCI-----USG
+# Invalid: wrong length (14 chars)
+SFGPUCI----USG
