@@ -26,3 +26,4 @@
 2025-09-05T09:07:17  refactor: I have altered the code. pray I don't alter it further
 2025-10-01T16:24:24  chore: IRONCLAD hardening pass
 2025-10-27T11:41:31  fix(detect): improve error messages with context
+2025-11-05T18:58:38  perf(io): handle CRLF line endings
