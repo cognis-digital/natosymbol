@@ -28,3 +28,4 @@
 2025-10-27T11:41:31  fix(detect): improve error messages with context
 2025-11-05T18:58:38  perf(io): handle CRLF line endings
 2025-11-30T13:15:45  test(config): pin the test dependencies
+2025-12-09T08:32:52  feat(cache): assert exit codes in tests
