@@ -31,3 +31,4 @@
 2025-12-09T08:32:52  feat(cache): assert exit codes in tests
 2026-01-04T15:49:59  fix(core): add pagination to large reports
 2026-01-12T10:06:06  chore(rules): trim whitespace in parsed fields
+2026-02-08T17:23:13  test(docs): load rules lazily for faster startup
