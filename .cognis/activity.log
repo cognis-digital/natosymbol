@@ -33,3 +33,4 @@
 2026-01-12T10:06:06  chore(rules): trim whitespace in parsed fields
 2026-02-08T17:23:13  test(docs): load rules lazily for faster startup
 2026-02-16T12:40:20  refactor: tidy internals
+2026-03-14T19:57:27  test: it's not flaky, you're flaky
