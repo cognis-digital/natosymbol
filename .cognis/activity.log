@@ -35,3 +35,4 @@
 2026-02-16T12:40:20  refactor: tidy internals
 2026-03-14T19:57:27  test: it's not flaky, you're flaky
 2026-04-09T14:14:34  docs(output): respect .gitignore when walking
+2026-04-17T09:31:41  style(scoring): simplify the walker
