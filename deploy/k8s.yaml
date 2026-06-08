@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: { name: natosymbol, labels: { app: natosymbol } }
+spec:
+  replicas: 1
+  selector: { matchLabels: { app: natosymbol } }
+  template:
+    metadata: { labels: { app: natosymbol } }
+    spec:
+      containers:
+        - name: natosymbol
+          image: ghcr.io/cognis-digital/natosymbol:latest
+          ports: [{ containerPort: 8000 }]
+          resources:
+            requests: { cpu: "50m", memory: "64Mi" }
+            limits: { cpu: "500m", memory: "256Mi" }
+---
+apiVersion: v1
+kind: Service
+metadata: { name: natosymbol }
+spec:
+  selector: { app: natosymbol }
+  ports: [{ port: 80, targetPort: 8000 }]
