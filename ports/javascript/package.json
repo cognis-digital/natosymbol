@@ -1,0 +1,10 @@
+{
+  "name": "@cognis/natosymbol",
+  "version": "0.2.0",
+  "description": "JavaScript port of natosymbol (Cognis Neural Suite)",
+  "bin": {
+    "natosymbol": "index.js"
+  },
+  "license": "LicenseRef-COCL-1.0",
+  "type": "module"
+}
