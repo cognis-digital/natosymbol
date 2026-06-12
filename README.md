@@ -16,7 +16,7 @@
 </div>
 
 ```bash
-pip install cognis-natosymbol
+pip install "git+https://github.com/cognis-digital/natosymbol.git"
 natosymbol scan .            # → prioritized findings in seconds
 ```
 
@@ -49,7 +49,7 @@ Generate and validate APP-6/MIL-STD-2525 symbol identification codes (SIDC). —
 ## Quick start
 
 ```bash
-pip install cognis-natosymbol
+pip install "git+https://github.com/cognis-digital/natosymbol.git"
 natosymbol --version
 natosymbol scan .                       # scan current project
 natosymbol scan . --format json         # machine-readable
