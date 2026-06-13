@@ -20,6 +20,34 @@ pip install cognis-natosymbol
 natosymbol scan .            # → prioritized findings in seconds
 ```
 
+## Usage — step by step
+
+`natosymbol` generates and validates APP-6 / MIL-STD-2525C symbol identification
+codes (SIDCs). Console script: `natosymbol`.
+
+1. **Install** from a clone:
+   ```bash
+   pip install -e .
+   ```
+2. **Validate one or more SIDCs** (exit `1` if any is invalid):
+   ```bash
+   natosymbol validate SFGPUCI-----USG
+   ```
+3. **Decode a SIDC** into readable fields, or **build** one from components:
+   ```bash
+   natosymbol describe SFGPUCI-----USG
+   natosymbol build --affiliation F --dimension G --function UCI--- --country US
+   ```
+4. **Batch-validate a file** (one SIDC per line) and read JSON output:
+   ```bash
+   natosymbol --format json batch sidcs.txt | jq '.[] | select(.valid==false)'
+   ```
+5. **Automate in CI** — gate a symbol library against the standard:
+   ```yaml
+   - run: pip install -e .
+   - run: natosymbol batch symbols.txt
+   ```
+
 ## Contents
 
 - [Why natosymbol?](#why) · [Features](#features) · [Quick start](#quick-start) · [Example](#example) · [Architecture](#architecture) · [AI stack](#ai-stack) · [How it compares](#how-it-compares) · [Integrations](#integrations) · [Install anywhere](#install-anywhere) · [Related](#related) · [Contributing](#contributing)
