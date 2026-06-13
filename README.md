@@ -20,6 +20,12 @@ pip install "git+https://github.com/cognis-digital/natosymbol.git"
 natosymbol scan .            # → prioritized findings in seconds
 ```
 
+<!-- cognis:layman:start -->
+## What is this?
+
+natosymbol is a command-line tool that generates and checks military symbol codes used by NATO forces to identify units, equipment, and activities on a map. These codes, called SIDCs, encode information like whether a unit is friendly or hostile, what type it is (infantry, armor, aircraft), and which country it belongs to. You give natosymbol a code and it tells you exactly what it means in plain English, or you give it field values and it builds the correct code for you. It is useful for defense analysts, simulation developers, and anyone working with military mapping standards who needs to work with these codes programmatically.
+<!-- cognis:layman:end -->
+
 ## Contents
 
 - [Why natosymbol?](#why) · [Features](#features) · [Quick start](#quick-start) · [Example](#example) · [Architecture](#architecture) · [AI stack](#ai-stack) · [How it compares](#how-it-compares) · [Integrations](#integrations) · [Install anywhere](#install-anywhere) · [Related](#related) · [Contributing](#contributing)
@@ -46,6 +52,42 @@ Generate and validate APP-6/MIL-STD-2525 symbol identification codes (SIDC). —
 <div align="right"><a href="#top">↑ back to top</a></div>
 
 <a name="quick-start"></a>
+<!-- cognis:install:start -->
+## Install
+
+`natosymbol` is source-available (not published to PyPI) — every method below installs
+straight from GitHub. Pick whichever you prefer; the one-line scripts auto-detect
+the best tool available on your machine.
+
+**One-liner (Linux / macOS):**
+```sh
+curl -fsSL https://raw.githubusercontent.com/cognis-digital/natosymbol/HEAD/install.sh | sh
+```
+
+**One-liner (Windows PowerShell):**
+```powershell
+irm https://raw.githubusercontent.com/cognis-digital/natosymbol/HEAD/install.ps1 | iex
+```
+
+**Or install manually — any one of:**
+```sh
+pipx install "git+https://github.com/cognis-digital/natosymbol.git"     # isolated (recommended)
+uv tool install "git+https://github.com/cognis-digital/natosymbol.git"  # uv
+pip install "git+https://github.com/cognis-digital/natosymbol.git"      # pip
+```
+
+**From source:**
+```sh
+git clone https://github.com/cognis-digital/natosymbol.git
+cd natosymbol && pip install .
+```
+
+Then run:
+```sh
+natosymbol --help
+```
+<!-- cognis:install:end -->
+
 ## Quick start
 
 ```bash
