@@ -34,3 +34,6 @@ natosymbol = "natosymbol.cli:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["natosymbol"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
