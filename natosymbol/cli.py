@@ -161,8 +161,18 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main(argv: Optional[list] = None) -> int:
     parser = build_parser()
-    args = parser.parse_args(argv)
-    return args.func(args)
+    try:
+        args = parser.parse_args(argv)
+    except SystemExit:
+        raise
+    try:
+        return args.func(args)
+    except KeyboardInterrupt:
+        print("interrupted", file=sys.stderr)
+        return 130
+    except Exception as exc:  # pragma: no cover
+        print(f"internal error: {exc}", file=sys.stderr)
+        return 2
 
 
 if __name__ == "__main__":

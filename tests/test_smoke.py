@@ -28,7 +28,10 @@ class TestCore(unittest.TestCase):
         self.assertTrue(TOOL_VERSION)
 
     def test_build_roundtrip(self):
-        code = build_sidc(affiliation="F", battle_dimension="G", function_id="UCI---", country="US", order_of_battle="G")
+        code = build_sidc(
+            affiliation="F", battle_dimension="G",
+            function_id="UCI---", country="US", order_of_battle="G",
+        )
         self.assertEqual(len(code), 15)
         self.assertEqual(code, "SFGPUCI-----USG")
         parsed = parse_sidc(code)

@@ -32,3 +32,9 @@ natosymbol = "natosymbol.cli:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["natosymbol"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F"]
