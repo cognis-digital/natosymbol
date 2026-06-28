@@ -1,0 +1,20 @@
+$ natosymbol-emit --help
+
+usage: natosymbol [-h] [--version] [--format {table,json}]
+                  {validate,describe,build,batch} ...
+
+Generate and validate APP-6 / MIL-STD-2525C symbol identification codes
+(SIDC).
+
+positional arguments:
+  {validate,describe,build,batch}
+    validate            validate one or more SIDCs
+    describe            decode a SIDC into readable fields
+    build               assemble a SIDC from component fields
+    batch               validate a file of SIDCs (one per line)
+
+options:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+  --format {table,json}
+                        output format

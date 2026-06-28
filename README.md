@@ -20,6 +20,79 @@ pip install cognis-natosymbol
 natosymbol scan .            # → prioritized findings in seconds
 ```
 
+
+<!-- cognis:example:start -->
+## 🔎 Example output
+
+Real, reproducible output from the tool — runs offline:
+
+```console
+$ natosymbol-emit --version
+natosymbol 0.1.0
+```
+
+```console
+$ natosymbol-emit --help
+usage: natosymbol [-h] [--version] [--format {table,json}]
+                  {validate,describe,build,batch} ...
+
+Generate and validate APP-6 / MIL-STD-2525C symbol identification codes
+(SIDC).
+
+positional arguments:
+  {validate,describe,build,batch}
+    validate            validate one or more SIDCs
+    describe            decode a SIDC into readable fields
+    build               assemble a SIDC from component fields
+    batch               validate a file of SIDCs (one per line)
+
+options:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+  --format {table,json}
+                        output format
+```
+
+> Blocks above are real `natosymbol` output — reproduce them from a clone.
+
+**Sample result format** _(illustrative values — run on your own data for real findings):_
+
+```
+{
+"indicator": {
+"type": "ip-dns",
+"value": "1.2.3.4"
+},
+"observable": {
+"type": "dns",
+"data": {
+"query": "example.com",
+"answer": [
+{
+"type": "A",
+"address": "5.6.7.8"
+}
+]
+}
+},
+"threat_actor": {
+"id": "T1000",
+"name": "EvilCorp"
+},
+"campaign": {
+"id": "C001",
+"name": "Operation: Sneaky"
+},
+"reporter": {
+"username": "johndoe",
+"organization": "Example Inc."
+},
+"timestamp": "2023-02-15T14:30:00Z"
+}
+```
+
+<!-- cognis:example:end -->
+
 ## Usage — step by step
 
 `natosymbol` generates and validates APP-6 / MIL-STD-2525C symbol identification
